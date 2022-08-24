@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'interregular';
+    src: local('interregular'),
+         url('../fonts/inter-regular-webfont.woff2') format('woff2'),
+         url('../fonts/inter-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
