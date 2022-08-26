@@ -6,12 +6,183 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-reboot.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="dist/style.min.css">
     <title>Test</title>
 </head>
 <body>
-    test
+    <div class="header py-4">
+        <div class="wrapper row align-items-center">
+            <div class="header__logo col-xxl-4 col-xl-3 col-sm-6 col-3">
+                <img src="img/logo.svg" alt="logo" title="logo">
+            </div>
+            <div class="burger col-sm-6 col-9 d-flex justify-content-end align-items-center d-xl-none">
+                <button class="burger__m-btn m-btn">Заказать звонок</button>
+                <div class="burger__switch-btn">
+                    <span></span>
+                </div>
+                <div class="burger__menu menu">
+                    <ul class="menu__nav nav d-flex flex-column align-items-center">
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Кейсы</a>
+                        </li>
+                        <li class="nav__item nav__item_mod">
+                            <a href="#" class="nav__link">Бизнесу</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Услуги</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Контакты</a>
+                        </li>                     
+                    </ul>
+                </div>
+            </div>
+            <div class="header__menu menu col-xxl-8 col-xl-9 d-xl-flex d-none justify-content-end align-items-center">
+                <ul class="menu__nav nav">
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Кейсы</a>
+                    </li>
+                    <li class="nav__item nav__item_mod">
+                        <a href="#" class="nav__link">Бизнесу</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Услуги</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Контакты</a>
+                    </li>
+                </ul>
+                <button class="menu__m-btn m-btn">Заказать звонок</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="intro">
+            <div class="slider d-none d-sm-block">
+                <div class="slider__item">
+                    <img src="img/pic-slider-1.jpg" alt="Красивое здание" title="Красивое здание">
+                </div>
+                <div class="slider__item">
+                    <img data-lazy="img/pic-slider-2.jpg" alt="Красивое здание" title="Красивое здание">
+                </div>
+                <div class="slider__item">
+                    <img data-lazy="img/pic-slider-1.jpg" alt="Красивое здание" title="Красивое здание">
+                </div>
+                <div class="slider__item">
+                    <img data-lazy="img/pic-slider-2.jpg" alt="Красивое здание" title="Красивое здание">
+                </div>
+            </div>
+
+
+            <div class="slider d-sm-none">
+                <div class="slider__item">
+                    <img src="img/pic-1.jpg" alt="Красивое здание" title="Красивое здание">
+                </div>
+                <div class="slider__item">
+                    <img data-lazy="img/pic-2.jpg" alt="Красивое здание" title="Красивое здание">
+                </div>
+                <div class="slider__item">
+                    <img data-lazy="img/pic-3.jpg" alt="Красивое здание" title="Красивое здание">
+                </div>
+                <div class="slider__item">
+                    <img data-lazy="img/pic-4.jpg" alt="Красивое здание" title="Красивое здание">
+                </div>
+            </div>
+            <h2 class="main-title intro__main-title">
+                <div class="wrapper">
+                    Lorem ipsum dolor sit<br> amet, <span>consectetur<br> adipiscing elit</span>
+                </div>
+            </h2>
+        </div>
+
+        <div class="service py-5">
+            <div class="wrapper">
+                <div class="page-title pb-4">Наши услуги</div>
+                <div class="cards row g-4"></div>
+                <div class="d-flex justify-content-center py-4">
+                    <button class="m-btn service__m-btn mt-2">Все услуги</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer py-2">
+        <div class="wrapper">
+            <div class="row py-5">
+                <div class="col-xxl-2 d-xxl-block d-none">
+                    <div class="elem"></div>
+                </div>
+                <div class="col-xxl-2 col-lg-3 col-sm-6">
+                    <div class="footer__title">Для связи</div>
+                    <ul class="" id="footer__contacts">
+                        <li>
+                            <a href="#">7 (926) 126-64-57</a>
+                        </li>
+                        <li>
+                            <a href="#">7 (926) 126-64-57</a>
+                        </li>
+                        <li>
+                            <a href="#">7 (926) 126-64-57</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xxl-3 col-lg-3 col-sm-6">
+                    <div class="footer__title">Компания</div>
+                    <ul>
+                        <li>
+                            <a href="#">Услуги</a>
+                        </li>
+                        <li>
+                            <a href="#">Кейсы</a>
+                        </li>
+                        <li>
+                            <a href="#">Контакты</a>
+                        </li>
+                        <li>
+                            <a href="#">Сотрудничество</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xxl-2 col-lg-3 col-sm-6">
+                    <div class="footer__title">Документы</div>
+                    <ul>
+                        <li>
+                            <a href="#">Политика<br> конфеденциальности</a>
+                        </li>
+                        <li>
+                            <a href="#">Пользовательское<br> соглашение</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xxl-3 col-lg-3 col-sm-6">
+                    <div class="footer__title">Будьте в курсе</div>
+                    <form name="mailingList" action="">
+                        <div class="form-wrapper">
+                            <input name="email" type="email" placeholder="E ‒ mail" required minlength="5">
+                            <button>
+                                <svg aria-hidden="true" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17.0303 0.969691C17.2341 1.17342 17.3031 1.47584 17.2079 1.74778L11.9579 16.7478C11.8563 17.038 11.5878 17.2369 11.2806 17.2494C10.9733 17.2619 10.6895 17.0856 10.5646 16.8046L7.6818 10.3182L1.1954 7.43538C0.91439 7.31049 0.738092 7.02671 0.750627 6.71945C0.763163 6.41219 0.961991 6.14371 1.25224 6.04213L16.2522 0.792127C16.5242 0.696948 16.8266 0.765962 17.0303 0.969691ZM9.14456 9.91612L11.1671 14.4667L14.7064 4.35429L9.14456 9.91612ZM13.6457 3.29362L3.53331 6.83297L8.0839 8.85546L13.6457 3.29362Z" fill="white"/>
+                                </svg>                                   
+                            </button>
+                        </div>
+                    </form>
+                    <div class="social mt-5">
+                        <a href="#" class="social__item"></a>
+                        <a href="#" class="social__item"></a>
+                        <a href="#" class="social__item"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copywright pt-2 pb-4">Copyright © 2022 SCID</div>
+        </div>
+    </div>
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
