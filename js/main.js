@@ -55,3 +55,23 @@
         }
     })
 })();
+
+//ajax
+(function(){
+    const parent = document.querySelector('.cards'),
+        btnLoad = document.querySelector('.service__m-btn-js');
+
+    btnLoad.addEventListener('click', function getData(event) {
+        event.preventDefault();
+        fetch('db.html').then(
+            response => {
+                return response.text();
+            }
+        ).then(
+            data => {
+                parent.innerHTML += data;
+            }
+        )
+        btnLoad.removeEventListener('click', getData);
+    })
+})();
